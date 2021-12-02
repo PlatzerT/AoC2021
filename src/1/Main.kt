@@ -1,5 +1,5 @@
-import java.io.BufferedReader
-import java.io.File
+package `1`
+
 import java.lang.NumberFormatException
 
 /****************************
@@ -11,7 +11,7 @@ Projekt: AoC2021
 
 fun main(args: Array<String>) {
     println("ok")
-    var input = readFileAsLines("/Users/thomasplatzer/Local/AoC2021/1/src/input.txt")
+    var input = Reader.readFileAsLines("/Users/thomasplatzer/Local/AoC2021/src/1/input.txt")
     println(input)
 
     var counter = 0
@@ -31,5 +31,3 @@ fun main(args: Array<String>) {
     println(counter)
 }
 
-fun readFileAsLines(fileName: String): List<String>
-        = File(fileName).bufferedReader().readLines()
